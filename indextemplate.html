@@ -5,10 +5,13 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Digital Marketing Specialist in Seattle. View my references and contact me to develop successful marketing campaigns and more...">
+  <meta name="url" content="http://laurecostanzi.fr">
+  <meta name="author" content="Laure Costanzi">
 
-  <title>Laure Costanzi - Marketing & Web Development</title>
+
+  <title>Laure Costanzi - Marketing Specialist</title>
+  <link rel="icon" type="image/ico" href="img/portfolio/fullsize/favicon.png" />
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +24,15 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/creative.css" rel="stylesheet">
+
+<!--Map Section-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
 
 </head>
 
@@ -30,14 +41,15 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="nav-link js-scroll-trigger" href="#">
+      <img src="img/portfolio/fullsize/mylogo4.png" style="position: relative; top: 2px" height="19" alt="logo laure"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#aboutme">About me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -46,14 +58,18 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+           <a class="nav-link js-scroll-trigger" href="mailto2:laure@costanzi.fr"> <i class="fas fa-envelope fa-1x"></i></a>
+                    </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHTORrGE7h9-AAAAW_z1k7Q563yqtUY8161ypFemWRz3X05DaAZ4b90AmuuB1zqu0QeJjQ8LBRn1P3aKYNMW5VzElJxtsYnZyrGhJ5Y3DVpIoASmq5n_sT6Rtc88EWt6wOQGk0=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Flaurekopacin" title="Connect with me on Linkedin"target="_blank"><i class="fab fa-linkedin-in fa-1x"></i></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
-  <!-- Masthead -->
+  <!-- Masthead 
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
@@ -68,150 +84,151 @@
       </div>
     </div>
   </header>
+-->
+
+  <!--Masthead2
+  <header class="masthead2">
+<div class="container">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+<p>Hello my name is Laure.</p>
+<h1>I help people developing</h1>
+  <h2>
+  <span
+     class="txt-rotate"
+     data-period="10"
+     data-rotate='[ "successful marketing campaigns.", "customer retention strategies.", "improve brand awarness."]'></span></h2>
+</h2>
+</div>
+</header>
+ -->
+
+  <!--Masthead3 -->
+<header class="masthead3">
+<div class="container py-6">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"type="text/css" />
+  <p>Hello my name is Laure.</p>
+<h1><b>I help people developing</b></h1>
+  <div class="output" id="output">
+    <h1 class="cursor"></h1>
+  </div>
+</div>
+</header>
+
+
 
   <!-- About Section -->
-  <section class="page-section bg-primary" id="about">
+  <section class="page-section bg-secondary aboutmesec1" id="aboutme">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">We've got what you need!</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          <h2 class="text-black mt-0"><b>About me</b></h2>
+          <hr class="divider my-4"id="dvdsection">
+          <div class="row">
+            <div class="col-lg-5 mb-4">
+              <h4 class="text-muted">I am a French marketing specialist based in the US.</h4>
+          <p class="text-black mb-4">I have 10 years background in partnership and marketing in the mobility, energy and certification companies and afiliates.</p>
+          <p class="text-black mb-4">I specialized in <b>digital marketing</b> 4 years ago and I managed amazing projects with positions as communication, marketing and CRM Manager.</p>
+          <p class="text-black mb-4">I live in Seattle since 2019 and I am involved in mutliple volunteer projects in the Pacific North West.</p>
+
+          </div>
         </div>
       </div>
-    </div>
   </section>
+  
 
   <!-- Services Section -->
-  <section class="page-section" id="services">
+  <section class="page-section d-none d-sm-block" id="services">
     <div class="container">
-      <h2 class="text-center mt-0">At Your Service</h2>
-      <hr class="divider my-4">
       <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Sturdy Themes</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+        <div class="col">
+      <h3 class="text-center mt-0">At Your Service developing</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class=text-center><b>Strong customer relationship</b><br>Whether measuring the satisfaction of your customers, recruiting or retaining customers, I help you define and implement multilingual marketing campaigns on different channels including a CRM.</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center"><b>Brand awareness & Strong Partnership</b><br>Making your brand stronger with powerful co-branding partnerships, repositioning your brand on a market and developing your brand awarness online.</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center"><b>Successful customer experience</b><br>Redesigning your multilingual website,<br>auditing and improving a customer process.</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center"><b>Segmentation and KPI of your database</b><br>Implementing KPI of your customer database, and helping you ta take strategic marketing decisions to run your business with success.</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Up to Date</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Ready to Publish</h3>
-            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Made with Love</h3>
-            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-          </div>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
+  </div>
+    </div>
   </section>
+
+  <!-- Services Section initial-->
+
+      <section class="page-section" id="servicesinitial">
+        <div class="container" id="borderservices">
+          <h3 class="text-center mt-0">Skills and tools</h3>
+          <hr class="divider my-4" id="dvdcontact">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fab fa-3x fa-html5 text-primary mb-4"></i>
+            <h3 class="h6 mb-2">Web dev & CRM systems</h3>
+            <p class="text-muted mb-0">CSS, HTML:5<br>Adobe </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fas fa-3x fa-globe-americas text-primary mb-4"></i>
+            <h3 class="h6 mb-2">Multilingual</h3>
+            <p class="text-muted mb-0">English, French, Spanish bilingual</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fas fa-3x fa-chart-bar text-primary mb-4"></i>
+            <h3 class="h6 mb-2">Analytic</h3>
+            <p class="text-muted mb-0">Google Analytics, SQL, Excel,<br>Google Data Studio</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </section>
+    
+    
 
   <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container-fluid p-0">
+  <section class="container-fluid" id="portfolio">
+    <h class="text-center" id="titleportfolio"><span>PREVIOUS & CURRENT EMPLOYERS</span></h5>
+      <hr class="divider my-4" id="dvdcontact">
       <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+        <div class="col-lg-4 col-sm-6 bordercol">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo isilines.jpg" alt="logo isilines">
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+        <div class="col-lg-4 col-sm-6 bordercol">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo autolib.jpg" alt="logo autolib">
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+        <div class="col-lg-4 col-sm-6 bordercol bordercol-right" id="">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo eurolines.jpg" alt="logo eurolines">
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+    </div>
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6 bordercol">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo total.jpg" alt="logo total">
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+        <div class="col-lg-4 col-sm-6 bordercol">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo mopop.jpg" alt="logo mopop">
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
+        <div class="col-lg-4 col-sm-6 bordercol bordercol-right" id="">
+            <img class="img-fluid" src="img/portfolio/thumbnails/logo afnor.png" alt="logo afnor">
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
     </div>
   </section>
 
@@ -220,29 +237,37 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          <h4 class="mt-0"><b>Let's Get In Touch!</b></h4>
+          <hr class="divider my-4" id="dvdcontact">
+          <p class="text mb-2">Ready to start your next project?<br>Send me an email and I will get back to you as soon as possible.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+      <div class="row justify-content-center">
+        <div class="col mr-auto text-center">
+          <a href="mailto:laure@costanzi.fr?subject=Important!&body=Hi." title="Send me an email 🙂"> <i class="fas fa-envelope fa-2x grow"></i></a>
+            <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHTORrGE7h9-AAAAW_z1k7Q563yqtUY8161ypFemWRz3X05DaAZ4b90AmuuB1zqu0QeJjQ8LBRn1P3aKYNMW5VzElJxtsYnZyrGhJ5Y3DVpIoASmq5n_sT6Rtc88EWt6wOQGk0=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Flaurekopacin" target="_blank" title="Connect with me on Linkedin"><i class="fab fa-linkedin-in fa-2x mb-3 grow"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+<!--Map Section-->
+<section class="map" id="mapid">
+  <header class="map">
+  <div class="container">
+  <div id="mapid"></div>
+  </div>
+  </header>
+  </section> 
+
+
+
+
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+      <div class="small text-center text-muted">Copyright &copy; 2020 - Laure Costanzi</div>
     </div>
   </footer>
 
@@ -255,7 +280,10 @@
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
+  <script src="js/creative.js"></script>
+
+  <!-- Scroll top button -->
+<a id="back-to-top" href="#" title="Scroll to top" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
 </body>
 
