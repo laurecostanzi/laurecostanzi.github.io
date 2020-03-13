@@ -38,8 +38,8 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <!-- Navigation for bs-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-none d-sm-block" id="mainNav">
     <div class="container">
       <a class="nav-link js-scroll-trigger" href="#">
       <img src="img/portfolio/fullsize/mylogo4.png" style="position: relative; top: 2px" height="19" alt="logo laure"></a>
@@ -68,6 +68,37 @@
     </div>
   </nav>
   
+    <!-- Navigation for sd-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block d-sm-none" id="mainNav">
+      <div class="container">
+        <a class="nav-link js-scroll-trigger" href="#">
+        <img src="img/portfolio/fullsize/mylogo4.png" style="position: relative; top: 2px" height="19" alt="logo laure"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link js-scroll-trigger" href="mailto:laure@costanzi.fr"> <i class="fas fa-envelope fa-1x"></i></a>
+                      </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHTORrGE7h9-AAAAW_z1k7Q563yqtUY8161ypFemWRz3X05DaAZ4b90AmuuB1zqu0QeJjQ8LBRn1P3aKYNMW5VzElJxtsYnZyrGhJ5Y3DVpIoASmq5n_sT6Rtc88EWt6wOQGk0=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Flaurekopacin" title="Connect with me on Linkedin"target="_blank"><i class="fab fa-linkedin-in fa-1x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+
 
   <!-- Masthead 
   <header class="masthead">
@@ -124,9 +155,9 @@
           <div class="row">
             <div class="col-lg-5 mb-4">
               <h4 class="text-muted">I am a French marketing specialist based in the US.</h4>
-          <p class="text-black mb-4">I have 10 years background in partnership and marketing in the mobility, energy and certification companies and afiliates.</p>
-          <p class="text-black mb-4">I specialized in <b>digital marketing</b> 4 years ago and I managed amazing projects with positions as communication, marketing and CRM Manager.</p>
-          <p class="text-black mb-4">I live in Seattle since 2019 and I am involved in mutliple volunteer projects in the Pacific North West.</p>
+          <p class="text-black mb-4">I have a 12 years background in partnership and marketing working for companies and afiliates in the mobility, energy and certification industries.</p>
+          <p class="text-black mb-4">I specialized in <b>digital marketing</b> 4 years ago and since then I managed amazing projects with roles such as communication, marketing and CRM Manager.</p>
+          <p class="text-black mb-4">Since 2019 I live in Seattle and I am now involved in mutliple volunteer projects in the Pacific North West.</p>
 
           </div>
         </div>
@@ -143,16 +174,16 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <p class=text-center><b>Strong customer relationship</b><br>Whether measuring the satisfaction of your customers, recruiting or retaining customers, I help you define and implement multilingual marketing campaigns on different channels including a CRM.</p>
+            <p class=text-center><b>Strong customer relationship</b><br>Whether monitoring the satisfaction of your customers, recruiting or retaining customers, I help you define and implement multilingual marketing campaigns on different channels.</p>
           </div>
           <div class="carousel-item">
-            <p class="text-center"><b>Brand awareness & Strong Partnership</b><br>Making your brand stronger with powerful co-branding partnerships, repositioning your brand on a market and developing your brand awarness online.</p>
+            <p class="text-center"><b>Brand awareness & Strong Partnerships</b><br>Making your brand stronger with powerful co-branding partnerships, repositioning your brand on a market and developing your brand awarness online.</p>
           </div>
           <div class="carousel-item">
-            <p class="text-center"><b>Successful customer experience</b><br>Redesigning your multilingual website,<br>auditing and improving a customer process.</p>
+            <p class="text-center"><b>Successful customer experience</b><br>Redesigning your website,<br>auditing and improving your customer processes.</p>
           </div>
           <div class="carousel-item">
-            <p class="text-center"><b>Segmentation and KPI of your database</b><br>Implementing KPI of your customer database, and helping you ta take strategic marketing decisions to run your business with success.</p>
+            <p class="text-center"><b>Segmentation and KPI from your database</b><br>Implementing KPI from your customer database, and helping you make strategic marketing decisions to run your business successfully.</p>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -168,19 +199,88 @@
   </div>
     </div>
   </section>
+  <!-- Services Section for sd -->
+  <section class="page-section d-block d-sm-none" id="servicesinitialsd">
+    <div class="container" id="borderservices">
+      <h3 class="text-center mt-0">At Your Service developing</h3>
+  <div class="row" id="smalldevices">
+    <div class="col-lg-3 col-md-6 mt-4 sd">
+      <div class="mt-7">
+        <img src="img/portfolio/thumbnails/rating.png" alt="rating logo">
+        <h3 class="h6 mb-2 mt-3" id="colortitle">Strong customer relationship</h3>
+        <p class="text-muted" id="textsd">Whether monitoring the satisfaction of your customers, recruiting or retaining customers, I help you define and implement multilingual marketing campaigns on different channels.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mt-4 sd">
+      <div class="mt-7">
+        <img src="img/portfolio/thumbnails/deal.png" alt="deal logo">
+        <h3 class="h6 mb-2 mt-3" id="colortitle">Brand awareness & Strong Partnership</h3>
+        <p class="text-muted" id="textsd">Making your brand stronger with powerful co-branding partnerships, repositioning your brand on a market and developing your brand awarness online.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mt-4 sd">
+      <div class="mt-7">
+        <img src="img/portfolio/thumbnails/data.png" alt="data logo">
+        <h3 class="h6 mb-2 mt-3" id="colortitle">Successful customer experience</h3>
+        <p class="text-muted" id="textsd">Redesigning your website, auditing and improving your customer processes.</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mt-4 sd">
+      <div class="mt-7">
+        <img src="img/portfolio/thumbnails/kpi.png" alt="kpi logo">
+        <h3 class="h6 mb-2 mt-3" id="colortitle">Segmentation and KPI of your database</h3>
+        <p class="text-muted" id="textsd">Implementing KPI from your customer database, and helping you make strategic marketing decisions to run your business successfully.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+
 
   <!-- Services Section initial-->
 
-      <section class="page-section" id="servicesinitial">
+      <section class="page-section d-none d-sm-block" id="servicesinitial">
         <div class="container" id="borderservices">
           <h3 class="text-center mt-0">Skills and tools</h3>
           <hr class="divider my-4" id="dvdcontact">
       <div class="row justify-content-md-center">
         <div class="col-lg-3 col-md-6 text-center mt-4">
           <div class="mt-7">
-            <i class="fab fa-3x fa-html5 text-primary mb-4"></i>
+            <i class="faa-tada fab fa-3x fa-html5 text-primary mb-4"></i>
             <h3 class="h6 mb-2">Web dev & CRM systems</h3>
-            <p class="text-muted mb-0">CSS, HTML:5<br>Adobe </p>
+            <p class="text-muted mb-0">CSS, HTML5<br>Adobe </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fas fa-3x fa-globe-americas text-primary mb-4"></i>
+            <h3 class="h6 mb-2">Multilingual</h3>
+            <p class="text-muted mb-0">English, French, Spanish bilingual</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fas fa-3x fa-chart-bar text-primary mb-4"></i>
+            <h3 class="h6 mb-2">Analytic</h3>
+            <p class="text-muted mb-0">Google Analytics, SQL, Excel,<br>Google Data Studio</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </section>
+
+        <!-- Services Section initial for sd-->
+
+      <section class="page-section d-block d-sm-none" id="servicesinitial">
+        <div class="container" id="borderservices">
+          <h3 class="text-center mt-0">Skills and tools</h3>
+          <hr class="divider my-4" id="dvdcontact">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3 col-md-6 text-center mt-4">
+          <div class="mt-7">
+            <i class="fab fa-3x fa-html5 text-primary mb-4 fontawsd"></i>
+            <h3 class="h6 mb-2">Web dev & CRM systems</h3>
+            <p class="text-muted mb-0">CSS, HTML5<br>Adobe </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center mt-4">
@@ -202,6 +302,7 @@
       </section>
     
     
+
 
   <!-- Portfolio Section -->
   <section class="container-fluid" id="portfolio">
