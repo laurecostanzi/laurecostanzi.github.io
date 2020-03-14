@@ -9715,7 +9715,7 @@ background-color:#f5f5f5;
 
 .page-section#services {
   padding: 8rem 0;
-  background-image: url("../img/trophy3.png");
+  background-image: url("../img/trophy.png");
   opacity: 0.8;
   filter: alpha(opacity=80);
   background-repeat: no-repeat;
@@ -9732,7 +9732,7 @@ background-color:#f5f5f5;
     background-attachment: scroll;
     background-size: cover;
     background-position: top;
-    background-image: url("../img/trophy3.png");
+    background-image: url("../img/trophy.png");
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 
@@ -9836,7 +9836,7 @@ header.masthead3 {
   background-attachment: scroll;
   background-size: cover;
   background-position: bottom;
-  background-image: url("../img/bg-masthead2.jpg");
+  background-image: url("../img/bg-masthead.jpg");
   background-color: rgba(255,255,255,0.6);
   background-blend-mode: lighten;
 
@@ -9850,7 +9850,7 @@ header.masthead3 {
     background-attachment: scroll;
     background-size: cover;
     background-position: bottom;
-    background-image: url("../img/bg-masthead2.jpg");
+    background-image: url("../img/bg-masthead.jpg");
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 
